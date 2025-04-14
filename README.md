@@ -12,13 +12,21 @@ A command-line application that enables users to interact with an SQLite databas
 
 ## 📁 Project Structure
 
-├── ai_assistant.py # Converts natural language to SQL using OpenAI 
-├── crud.py # Handles create, read, update, delete operations 
-├── csv_loader.py # Imports CSVs into the database and handles schema conflicts 
-├── database.py # Manages DB connection and query execution 
-├── utils.py # Error logging utility 
-├── main.py # Command-line interface for the application 
-└── README.md # Project overview and usage
+```bash
+SQL-Application/
+├── chat_sql_assistant/          # 📦 Main package directory
+│   ├── __init__.py              # Marks this folder as a Python package
+│   ├── ai_assistant.py          # Converts natural language queries into SQL using OpenAI API
+│   ├── crud.py                  # Performs Create, Read, Update, Delete operations on the database
+│   ├── csv_loader.py            # Loads CSV files into SQLite, handles schema conflicts
+│   ├── database.py              # Handles DB connection and query execution
+│   ├── utils.py                 # Provides logging utility for error tracking
+├── main.py                      # 🚀 Entry point for CLI — runs the full application
+├── setup.py                     # 🛠 Python packaging script for pip installation
+├── requirements.txt             # 📦 List of Python package dependencies
+└── README.md                    # 📘 Project description and usage instructions
+
+```
 
 ## 🚀 Getting Started
 
