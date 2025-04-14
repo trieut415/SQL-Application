@@ -1,5 +1,5 @@
 import sqlite3
-from utils import log_error
+from chat_sql_assistant.utils import log_error
 
 def connect_db(db_path="data.db"):
     """Connect to SQLite database."""

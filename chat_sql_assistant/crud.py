@@ -1,5 +1,5 @@
-from database import execute_query
-from utils import log_error
+from chat_sql_assistant.database import execute_query
+from chat_sql_assistant.utils import log_error
 
 def create_record(conn, table, data):
     """

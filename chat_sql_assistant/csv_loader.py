@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from utils import log_error
-from database import execute_query
+from chat_sql_assistant.utils import log_error
+from chat_sql_assistant.database import execute_query
 
 def handle_schema_conflict(table_name, conn):
     """

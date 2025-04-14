@@ -1,6 +1,6 @@
 import openai
-from database import execute_query
-from utils import log_error
+from chat_sql_assistant.database import execute_query
+from chat_sql_assistant.utils import log_error
 
 def generate_sql_from_nl(nl_query, conn):
     """

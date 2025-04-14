@@ -1,9 +1,9 @@
-import sqlite3
-from database import connect_db, get_tables, execute_query
-from csv_loader import create_table_from_csv
-from crud import create_record, read_records, update_record, delete_record
-from ai_assistant import generate_sql_from_nl
-from utils import log_error
+from chat_sql_assistant.database import connect_db, get_tables, execute_query
+from chat_sql_assistant.csv_loader import create_table_from_csv
+from chat_sql_assistant.crud import create_record, read_records, update_record, delete_record
+from chat_sql_assistant.ai_assistant import generate_sql_from_nl
+from chat_sql_assistant.utils import log_error
+
 
 def display_records(records):
     """Display records in a simple row-by-row format."""
